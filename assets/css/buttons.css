@@ -63,6 +63,7 @@ a.button {
   }
 }
 
+/*展开阅读按钮样式index.html*/
 a.read-more,
 a.read-more:hover,
 a.read-more:active {
@@ -72,6 +73,33 @@ a.read-more:active {
   padding: 0;
   margin: 20px 0;
   font-weight: bold;
+  font-size: 0.9rem;
+
+  @media (--phone) {
+    font-size: 0.7rem;
+  }
+}
+
+/*展开阅读 箭头 样式index.html*/
+a.read-more-arrow {
+  display: inline-flex;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration:none;
+  animation: arrow 3s infinite;
+  @keyframes arrow {
+    0%{opacity: 0.2}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+  }
+
+  @media (--phone) {
+    font-size: 0.7rem;
+  }
 }
 
 .code-toolbar {
