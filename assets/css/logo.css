@@ -21,14 +21,15 @@
     font-size: 1.125rem;
   }
 
+  /*主页按钮 后面 闪烁样式logo.html*/
   &__cursor {
     display: inline-block;
-    width: 10px;
+    width: 4px;
     height: 1rem;
-    background: #fe5186;
+    background: #8f8d8e;
     margin-left: 5px;
     border-radius: 1px;
-    animation: cursor 1s infinite;
+    /*animation: cursor 3s infinite;*/
   }
 }
 
