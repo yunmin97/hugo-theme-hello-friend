@@ -141,12 +141,13 @@ code, kbd {
   }
 }
 
+/*代码块字体 样式*/
 pre {
   background: #212020;
   padding: 20px;
   border-radius: 8px;
-  font-size: .9rem;
   overflow: auto;
+  /*font-size: 0.8rem;*/
 
   @media (--phone) {
     white-space: pre-wrap;
