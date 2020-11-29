@@ -13,21 +13,23 @@
     border-bottom: 1px solid var(--border-color);
   }
 
+  /*文章的日期、作者等样式index.html*/
   &-meta {
-    font-size: 1rem;
+    font-size: 0.6rem;
     margin-bottom: 10px;
 
     @media (--phone) {
-      font-size: .85rem;
+      font-size: .5rem;
     }
   }
 
+  /*文章标题样式index.html*/
   &-title {
-    font-size: 2.625rem;
+    font-size: 1.0rem;
     margin: 0 0 20px;
 
     @media (--phone) {
-      font-size: 2rem;
+      font-size: 0.9rem;
     }
 
     a {
@@ -38,7 +40,7 @@
   &-tags {
     display: block;
     margin-bottom: 20px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     opacity: .5;
 
     a {
@@ -46,8 +48,14 @@
     }
   }
 
+  /*文章内容样式index.html*/
   &-content {
     margin-top: 30px;
+    font-size: 0.8rem;
+
+    @media (--phone) {
+      font-size: 0.7rem;
+    }
   }
 
   &-cover {

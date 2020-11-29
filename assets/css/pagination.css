@@ -7,17 +7,22 @@
     position: relative;
     margin: 100px 0 20px;
 
+    /* 阅读其他文章 样式 */
     &-h {
       text-align: center;
       margin: 0 auto;
       padding: 5px 10px;
       background: var(--background);
       color: var(--color-secondary);
-      font-size: .8rem;
+      font-size: .7rem;
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: .1em;
       z-index: 1;
+
+      @media (--phone) {
+        font-size: 0.6rem;
+      }
     }
 
     hr {
@@ -42,13 +47,14 @@
   }
 }
 
+/* 上、下一篇文章按钮样式single.html */
 .button {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: var(--background-secondary);
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 500;
   border-radius: 8px;
   max-width: 40%;
@@ -56,19 +62,25 @@
   cursor: pointer;
   appearance: none;
 
+  @media (--phone) {
+    font-size: 0.6rem;
+  }
+
   + .button {
     margin-left: 10px;
   }
-
+  
   a {
     display: flex;
-    padding: 8px 16px;
+    /*上、下一篇文章按钮上下padding调节*/
+    padding: 2px 16px;
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
   }
 
+  /* 上、下一篇文章按钮中文本样式single.html */
   &__text {
     text-overflow: ellipsis;
     white-space: nowrap;
